@@ -1,0 +1,298 @@
+@font-face {
+	 font-family: Roboto;
+	 src: url("../assets/fonts/Roboto-Regular.ttf");
+}
+ @font-face {
+	 font-family: RobotoMedium;
+	 src: url("../assets/fonts/Roboto-Medium.ttf");
+}
+ @font-face {
+	 font-family: RobotoBold;
+	 src: url("../assets/fonts/Roboto-Bold.ttf");
+}
+ @font-face {
+	 font-family: RobotoLight;
+	 src: url("../assets/fonts/Roboto-Light.ttf");
+}
+ .content {
+	 display: flex;
+	 width: 100%;
+	 font-family: Roboto, Arial, Tahoma, sans-serif;
+}
+ .content__order {
+	 width: 30%;
+	 padding-left: 35px;
+	 box-sizing: border-box;
+}
+ .order {
+	 display: flex;
+	 flex-direction: column;
+}
+ .order__title {
+	 font-weight: 600;
+	 white-space: nowrap;
+	 font-size: 40px;
+}
+ .order__personal {
+	 margin-top: 15px;
+}
+ .personal__title {
+	 font-size: 20px;
+	 font-weight: 600;
+	 white-space: nowrap;
+	 line-height: 28px;
+}
+ .personal__text {
+	 font-size: 15px;
+	 font-weight: 400;
+	 white-space: nowrap;
+	 line-height: 23px;
+}
+ .status__title {
+	 font-size: 18px;
+	 font-weight: 600;
+	 line-height: 24px;
+}
+ .status_expected {
+	 font-weight: 400;
+	 color: #d18a00;
+	 display: none;
+	 font-size: 15px;
+	 line-height: 18px;
+}
+ .payment__title {
+	 font-weight: 600;
+	 line-height: 24px;
+	 font-size: 20px;
+}
+ .payment__description {
+	 font-size: 15px;
+	 line-height: 18px;
+}
+ .paymentStatus__title {
+	 font-size: 20px;
+	 font-weight: 600;
+	 line-height: 18px;
+}
+ .paymentStatus .paymentStatus_waiting_for_payment {
+	 color: #c21616;
+	 font-size: 15px;
+	 line-height: 18px;
+	 display: none;
+}
+ .paymentStatus .paymentStatus_paid {
+	 color: #176e20;
+	 font-size: 15px;
+	 line-height: 18px;
+}
+ .invoice__title {
+	 font-size: 20px;
+	 font-weight: 600;
+	 line-height: 23px;
+}
+ .invoice__description {
+	 font-size: 15px;
+	 line-height: 18px;
+}
+ .purchases__title {
+	 font-weight: 600;
+	 color: #176e20;
+	 display: flex;
+	 justify-content: end;
+	 font-size: 40px;
+}
+ .purchases__cartPurchased {
+	 border: 1px solid #000;
+	 border-radius: 5px;
+	 margin-top: 20px;
+}
+ .cartPurchased__numberOfOrder {
+	 border-bottom: 1px solid #c4c4c4;
+	 padding-left: 10px;
+	 box-sizing: border-box;
+}
+ .cartPurchased__bacement {
+	 padding: 5px 10px;
+	 box-sizing: border-box;
+}
+ .numberOfOrder {
+	 padding: 3px 0;
+	 box-sizing: border-box;
+	 font-size: 15px;
+}
+ .goods__good {
+	 border-bottom: 1px solid #c4c4c4;
+}
+ .good {
+	 display: flex;
+	 padding: 5px 5px 5px 10px;
+	 box-sizing: border-box;
+}
+ .good__header {
+	 display: flex;
+	 flex-direction: column;
+}
+ .good__title {
+	 padding-bottom: 5px;
+	 box-sizing: border-box;
+	 font-size: 15px;
+}
+ .good__description {
+	 font-size: 12px;
+	 color: #505050;
+}
+ .good__specification {
+	 display: flex;
+	 width: 100%;
+	 flex-wrap: wrap;
+	 align-items: baseline;
+	 align-content: flex-end;
+	 justify-content: flex-start;
+	 flex: 1;
+}
+ .good__price {
+	 display: flex;
+	 align-items: baseline;
+	 flex: 1;
+}
+ .good__details {
+	 display: flex;
+	 align-items: center;
+	 width: 70%;
+}
+ .good__message {
+	 width: 100%;
+	 color: #c21616;
+	 padding-bottom: 2px;
+	 box-sizing: border-box;
+	 font-weight: bold;
+	 font-size: 15px;
+}
+ .good__finalPrice.good__finalPrice_discounted {
+	 color: #c21616;
+	 white-space: nowrap;
+	 font-weight: bold;
+	 font-size: 20px;
+	 /* line-height: 0.66em; */
+}
+ .good__initialPrice {
+	 color: #505050;
+	 text-decoration: line-through;
+	 white-space: nowrap;
+	 font-size: 15px;
+	 padding-left: 5px;
+	 padding-bottom: 6px;
+	 box-sizing: border-box;
+}
+ .good__size {
+	 font-size: 15px;
+	 white-space: nowrap;
+	 padding-right: 8px;
+	 box-sizing: border-box;
+}
+ .good__quantity {
+	 width: 20%;
+	 font-size: 15px;
+	 white-space: nowrap;
+}
+ .good__finalPrice {
+	 color: #2a176e;
+	 white-space: nowrap;
+	 font-weight: bold;
+	 font-size: 20px;
+}
+ .good__information {
+	 display: flex;
+}
+ .good__about {
+	 display: flex;
+	 flex-direction: column;
+	 width: 100%;
+}
+ .bacement__certificate {
+	 width: 50%;
+	 border-top: 1px solid;
+	 display: flex;
+	 padding-left: 10px;
+	 box-sizing: border-box;
+}
+ .bacement__total {
+	 display: flex;
+}
+ .certificate {
+	 line-height: 24px;
+	 color: #176e20;
+	 white-space: nowrap;
+	 font-size: 20px;
+}
+ .total {
+	 display: flex;
+	 width: 100%;
+}
+ .total__text {
+	 color: #2a176e;
+	 margin-right: 6px;
+	 font-size: 20px;
+}
+ .total__prev_price {
+	 text-decoration: line-through;
+	 color: #2a176e;
+	 margin-right: 6px;
+	 font-size: 20px;
+}
+ .total__final_price {
+	 color: #176e20;
+	 font-size: 20px;
+}
+ .content__continue {
+	 display: none;
+}
+ .content__purchases {
+	 width: 70%;
+}
+ .status_pending {
+	 font-weight: 400;
+	 color: #d18a00;
+	 font-size: 15px;
+	 line-height: 18px;
+}
+ .basement {
+	 display: flex;
+	 width: 100%;
+	 flex-wrap: wrap;
+}
+ .basement__certificate {
+	 width: 65%;
+}
+ .basement__pay {
+	 display: flex;
+	 justify-content: center;
+	 width: 100%;
+	 padding-top: 8px;
+	 box-sizing: border-box;
+}
+ .totalPay {
+	 display: flex;
+}
+ .totalPay__button {
+	 white-space: nowrap;
+	 background: #176e20;
+	 color: #fff;
+	 padding: 2px;
+	 box-sizing: border-box;
+	 border-radius: 2px;
+	 font-size: 20px;
+}
+ .pay__button {
+	 color: #fff;
+	 background: #176e20;
+	 border-radius: 2px;
+	 padding: 5px;
+	 box-sizing: border-box;
+	 font-size: 20px;
+	 width: 48%;
+	 border-color: #176e20;
+}
+ 
+ 
+ 

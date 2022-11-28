@@ -1,0 +1,369 @@
+@font-face {
+	 font-family: Roboto;
+	 src: url("../assets/fonts/Roboto-Regular.ttf");
+}
+ @font-face {
+	 font-family: RobotoMedium;
+	 src: url("../assets/fonts/Roboto-Medium.ttf");
+}
+ @font-face {
+	 font-family: RobotoBold;
+	 src: url("../assets/fonts/Roboto-Bold.ttf");
+}
+ @font-face {
+	 font-family: RobotoLight;
+	 src: url("../assets/fonts/Roboto-Light.ttf");
+}
+
+body {
+    margin: 0;
+}
+ .content {
+		 display: flex;
+		 flex-direction: column;
+		 width: 100%;
+		 font-family: Roboto, Arial, Tahoma, sans-serif;
+	}
+}
+ .content__order {
+		 width: 100%;
+		 padding: 0;
+		 box-sizing: border-box;
+	}
+ .order {
+	 display: flex;
+	 flex-direction: column;
+}
+ .order__title {
+		 padding-left: 20px;
+		 box-sizing: border-box;
+		 font-size: 20px;
+		 margin-top: 8px;
+		 font-weight: bold;
+	}
+ .order__personal {
+		 padding-left: 20px;
+		 box-sizing: border-box;
+		 margin-top: 8px;
+	}
+	
+ .order__status {
+		 padding-left: 20px;
+		 box-sizing: border-box;
+	}
+	 
+	 .order__payment {
+		 padding-left: 20px;
+		 box-sizing: border-box;
+	}
+	 .order__paymentStatus {
+		 padding-left: 20px;
+		 box-sizing: border-box;
+	}
+	 .order__invoice {
+		 padding-left: 20px;
+		 box-sizing: border-box;
+	}
+	
+ .personal__title {
+	 font-size: 20px;
+	 font-weight: 600;
+	 white-space: nowrap;
+	 line-height: 28px;
+}
+ .personal__text {
+	 font-size: 15px;
+	 font-weight: 400;
+	 white-space: nowrap;
+	 line-height: 23px;
+}
+ .status__title {
+	 font-size: 18px;
+	 font-weight: 600;
+	 line-height: 24px;
+}
+ .status_expected {
+	 font-weight: 400;
+	 color: #d18a00;
+	 display: none;
+	 font-size: 15px;
+	 line-height: 18px;
+}
+ .payment__title {
+	 font-weight: 600;
+	 line-height: 24px;
+	 font-size: 20px;
+}
+ .payment__description {
+	 font-size: 15px;
+	 line-height: 18px;
+}
+ .paymentStatus__title {
+	 font-size: 20px;
+	 font-weight: 600;
+	 line-height: 18px;
+}
+ .paymentStatus .paymentStatus_waiting_for_payment {
+	 color: #c21616;
+	 font-size: 15px;
+	 line-height: 18px;
+	 display: none;
+}
+ .paymentStatus .paymentStatus_paid {
+	 color: #176e20;
+	 font-size: 15px;
+	 line-height: 18px;
+}
+ .invoice__title {
+	 font-size: 20px;
+	 font-weight: 600;
+	 line-height: 23px;
+}
+ .invoice__description {
+	 font-size: 15px;
+	 line-height: 18px;
+}
+ 
+ .purchases__cartPurchased {
+	 border: 1px solid #000;
+	 border-radius: 5px;
+	 margin-top: 20px;
+}
+ .cartPurchased__numberOfOrder {
+	 padding-left: 10px;
+	 box-sizing: border-box;
+	 border-bottom: none;
+}
+ .cartPurchased__bacement {
+	 padding: 5px;
+	 box-sizing: border-box;
+}
+ .numberOfOrder {
+	 padding: 3px 0;
+	 box-sizing: border-box;
+	 font-size: 15px;
+}
+ .goods__good {
+	 border-bottom: 2px solid black;
+	 width: 100%;
+}
+ .good {
+	 display: flex;
+	 width: 100%;
+	 padding: 6px 0 10px 0;
+	 box-sizing: border-box;
+	}
+
+ .good__header {
+	 display: flex;
+	 flex-direction: column;
+}
+ .good__title {
+	 padding-bottom: 5px;
+	 box-sizing: border-box;
+	 font-size: 15px;
+}
+ .good__description {
+	 font-size: 12px;
+	 color: #505050;
+}
+ .good__specification {
+	 display: flex;
+	 width: 100%;
+	 flex-wrap: wrap;
+	 align-items: baseline;
+	 align-content: flex-end;
+	 justify-content: flex-start;
+	 flex: 1;
+}
+ .good__price {
+	 display: flex;
+	 align-items: baseline;
+	 flex: 1;
+	 flex-direction: column-reverse;
+	  margin-top: auto;
+}
+ .good__details {
+	 display: flex;
+	 flex-direction: column;
+	 align-items: flex-end;
+	 width: initial;
+	 flex-wrap: wrap-reverse;
+	 padding-right: 5px;
+	 box-sizing: border-box;
+	}
+
+ .good__message_mob {
+	 width: 100%;
+	 color: red;
+	 padding: 5px 0 5px 10px;
+	 box-sizing: border-box;
+	 font-weight: bold;
+	 font-size: 10px;
+	 display: flex;
+		
+}
+ .good__finalPrice.good__finalPrice_discounted {
+	 color: #c21616;
+	 white-space: nowrap;
+	 font-weight: bold;
+	 font-size: 20px;
+	 width: 100%;
+	line-height: 0.66em;
+	
+}
+ .good__initialPrice {
+	 color: #505050;
+	 text-decoration: line-through;
+	 white-space: nowrap;
+	 font-size: 15px;
+	 padding-left: 5px;
+	 padding-bottom: 6px;
+	 box-sizing: border-box;
+	 width: 100%;
+	 line-height: 0.66em;
+	
+}
+ .good__size {
+	 font-size: 15px;
+	 white-space: nowrap;
+	 padding-right: 8px;
+	 box-sizing: border-box;
+	 line-height: 1.66em;
+}
+ .good__quantity {
+	 width: 20%;
+	 font-size: 15px;
+	 white-space: nowrap;
+	 line-height: 0.66em;
+}
+ .good__finalPrice {
+	 color: #2a176e;
+	 white-space: nowrap;
+	 font-weight: bold;
+	 font-size: 20px;
+}
+ .good__information {
+	 display: flex;
+}
+ .good__about {
+	 display: flex;
+	 flex-direction: column;
+	 width: 100%;
+}
+ .bacement__certificate {
+	 width: 50%;
+	 border-top: 1px solid;
+	 display: flex;
+	 padding-left: 10px;
+	 box-sizing: border-box;
+}
+ .bacement__total {
+	 display: flex;
+}
+ .certificate {
+	 line-height: 24px;
+	 color: #176e20;
+	 font-size: 15px;
+}
+ .total {
+	 display: flex;
+	 width: 100%;
+}
+ .total__text {
+	 color: #2a176e;
+	 margin-right: 6px;
+	 font-size: 15px;
+}
+ .total__prev_price {
+	 text-decoration: line-through;
+	 color: #2a176e;
+	 margin-right: 6px;
+	 font-size: 15px;
+}
+ .total__final_price {
+	 color: #176e20;
+	 font-size: 15px;
+}
+ .content__continue {
+		 display: flex;
+		 justify-content: center;
+		 margin: 20px 0;
+		 background: #eaeaea;
+	}
+	
+ .content__purchases {
+	 width: 100%;
+}
+ .status_pending {
+	 font-weight: 400;
+	 color: #d18a00;
+	 font-size: 15px;
+	 line-height: 18px;
+}
+ .basement {
+	 display: flex;
+	 width: 100%;
+	 flex-wrap: wrap;
+	 flex-direction: column;
+	 align-items: flex-end;
+}
+ .basement__certificate {
+	 padding-bottom: 4px;
+	 box-sizing: border-box;
+}
+ .basement__pay_mob {
+	 display: flex;
+	 justify-content: center;
+	 width: 100%;
+	 padding-top: 8px;
+	 box-sizing: border-box;
+	 padding-top: 20px;
+}
+ .totalPay {
+	 display: flex;
+}
+ .totalPay__button {
+	/* display: flex;
+	 */
+	 white-space: nowrap;
+	 background: #176e20;
+	 color: #fff;
+	 padding: 2px;
+	 box-sizing: border-box;
+	 border-radius: 2px;
+	 font-size: 20px;
+}
+ .pay__button_mob {
+	 color: #fff;
+	 background: #176e20;
+	 border-radius: 2px;
+	 display: flex;
+	 width: 100%;
+	 justify-content: center;
+	 padding: 4px;
+	 box-sizing: border-box;
+	 font-size: 19px;
+	 white-space: initial;
+     border-color: #176e20;
+	 box-sizing: border-box;
+}
+ 
+	.purchases__title_mob {
+		 padding-left: 20px;
+		 box-sizing: border-box;
+		 font-size: 25px;
+		 color: #176e20;
+		 font-weight: bold;
+	}
+	
+	.continue {
+		 padding: 8px;
+		 box-sizing: border-box;
+		 color: #2a176e;
+		 font-size: 20px;
+	}
+ 
+ 
+ 
+
